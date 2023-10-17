@@ -160,13 +160,56 @@ a:hover {
 offtop {
 	color: #555;
 }
-.lg-container {
+.lg-container, .header, footer {
 	width: 70%;
 	background: #222;
 	display: flex;
-	padding: 20px;
 	align-items: center;
+}
+.lg-container, .header a, .header {
 	border-radius: 5px;
+}
+.lg-container {
+	padding: 20px;
+}
+.header, footer {
+	padding: 10px;
+}
+.header img {
+	margin-right: 5px;
+	border-radius: 5px;
+}
+.header a {
+	padding: 7px;
+	text-decoration: none;
+}
+.header a, .header a:hover, .header a:active {
+	transition: .1s;
+}
+.header a:hover {
+	background: #333;
+}
+.header a:active {
+	background: #444;
+}
+.no-decor {
+	text-decoration: none !important;
+}
+footer a, footer a:hover {
+	text-decoration: none;
+}
+footer a {
+	font-weight: bold;
+}
+footer a:hover {
+	opacity: 0.8;
+}
+.icon-links li {
+	display: flex;
+	align-items: center;
+}
+.icon-links li img {
+	margin-right: 3px;
 }
 .centered {
 	margin: auto;
@@ -175,7 +218,7 @@ offtop {
 /* mobile styling */
 
 @media screen and (max-width: 800px) {
-	.lg-container {
+	.lg-container, .header, footer {
 		width: 90%;
 	}
 }
