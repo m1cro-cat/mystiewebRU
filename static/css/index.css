@@ -137,6 +137,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	background: #1a1a1a;
 	color: #fff;
@@ -158,11 +161,26 @@ a:hover {
 	text-decoration-color: #e4e4e4;
 }
 offtop {
-	color: #555;
+	opacity: 0.5;
+}
+.h-cont {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+}
+.h-cont a {
+	font-size: 28px;
+	margin-left: 5px;
+	visibility: hidden;
+	transition: visibility 0s linear 0.3s;
+}
+.h-cont:hover a {
+	visibility: visible;
+	transition-delay: 0s;
 }
 .lg-container, .header, footer {
 	width: 70%;
-	background: #222;
+	background: #252525;
 	display: flex;
 	align-items: center;
 }
@@ -182,6 +200,7 @@ offtop {
 .header a {
 	padding: 7px;
 	text-decoration: none;
+	height: 36px;
 }
 .header a, .header a:hover, .header a:active {
 	transition: .1s;
@@ -219,6 +238,10 @@ footer a:hover {
 
 @media screen and (max-width: 800px) {
 	.lg-container, .header, footer {
-		width: 90%;
+		width: 95%;
+	}
+	.h-cont a, .h-cont:hover a {
+		visibility: visible;
+		transition: .2s;
 	}
 }
