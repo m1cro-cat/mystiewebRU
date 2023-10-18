@@ -187,10 +187,10 @@ offtop {
 .lg-container, .header a, .header {
 	border-radius: 5px;
 }
-.lg-container {
+.lg-container, footer {
 	padding: 20px;
 }
-.header, footer {
+.header {
 	padding: 10px;
 }
 .header img {
@@ -200,7 +200,6 @@ offtop {
 .header a {
 	padding: 7px;
 	text-decoration: none;
-	height: 36px;
 }
 .header a, .header a:hover, .header a:active {
 	transition: .1s;
@@ -243,5 +242,7 @@ footer a:hover {
 	.h-cont a, .h-cont:hover a {
 		visibility: visible;
 		transition: .2s;
+		text-decoration-thickness: 1px;
+		font-size: 24px;
 	}
 }
