@@ -6,13 +6,17 @@
 	<link href="/static/css/index.css" rel="stylesheet">
 	<title>MystieHum · IN DEVELOPMENT</title>
 </head>
-<body>
+<body id="home">
     <div style="display: none;"><a rel="me" class="none" href="https://wetdry.world/@mystie">Mastodon</a></div>
 	<nav class="header" style="margin: 10px auto 20px auto;">
 		<img src="/static/images/mst-avatar.jpg" width="36" alt="MystieHum avatar">
-		<a href="#about-me">About me</a>
-		<a href="#projects">Projects</a>
-		<a href="#contact">Contact me</a>
+		<div class="nav-links">
+			<a href="/" id="home-link">Home</a>
+			<!--a href="/#about-me">About me</a>
+			<a href="/#projects">Projects</a>
+			<a href="/#contact">Contact me</a-->
+			<a href="/feedback.html" id="feedback-link">Feedback</a>
+		</div>
 	</nav>
 	<div class="lg-container" style="margin: 10px auto;">
 		<div class="content">
@@ -35,7 +39,7 @@
 				<h2 id="projects">My projects:</h2>
 				<a href="#projects">#</a>
 			</div>
-			<ul>
+			<ul style="list-style-type: none;">
 				<li><a href="https://realvanyek.eu.org/qoritsuki" target="_blank">Qoritsuki</a> - (slightly abandoned) Discord bot</li>
 				<li><a href="https://github.com/MystieHum/mystie.eu.org" target="_blank">mystie.eu.org</a> - previous (bloated) website</li>
 				<li><a href="https://realvanyek.eu.org/tvhome" target="_blank">TVHome</a> - basically a start page for Smart TVs <offtop>(english is not yet supported)</offtop></li>

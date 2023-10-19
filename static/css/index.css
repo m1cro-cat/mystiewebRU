@@ -7,8 +7,8 @@
 	font-style: normal;
 	font-weight: 400;
 	src: 
-		local("DM Sans"),
-		url('/static/fonts/dm-sans-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	local("DM Sans"),
+	url('/static/fonts/dm-sans-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* dm-sans-italic - latin */
@@ -18,8 +18,8 @@
 	font-style: italic;
 	font-weight: 400;
 	src: 
-		local("DM Sans"),
-		url('/static/fonts/dm-sans-v14-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	local("DM Sans"),
+	url('/static/fonts/dm-sans-v14-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* dm-sans-500 - latin */
@@ -29,8 +29,8 @@
 	font-style: normal;
 	font-weight: 500;
 	src: 
-		local("DM Sans"),
-		url('/static/fonts/dm-sans-v14-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	local("DM Sans"),
+	url('/static/fonts/dm-sans-v14-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* dm-sans-500italic - latin */
@@ -40,8 +40,8 @@
 	font-style: italic;
 	font-weight: 500;
 	src: 
-		local("DM Sans"),
-		url('/static/fonts/dm-sans-v14-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	local("DM Sans"),
+	url('/static/fonts/dm-sans-v14-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* dm-sans-600 - latin */
@@ -51,8 +51,8 @@
 	font-style: normal;
 	font-weight: 600;
 	src: 
-		local("DM Sans"),
-		url('/static/fonts/dm-sans-v14-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	local("DM Sans"),
+	url('/static/fonts/dm-sans-v14-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* dm-sans-600italic - latin */
@@ -62,8 +62,8 @@
 	font-style: italic;
 	font-weight: 600;
 	src: 
-		local("DM Sans"),
-		url('/static/fonts/dm-sans-v14-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	local("DM Sans"),
+	url('/static/fonts/dm-sans-v14-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* dm-sans-700 - latin */
@@ -73,8 +73,8 @@
 	font-style: normal;
 	font-weight: 700;
 	src: 
-		local("DM Sans"),
-		url('/static/fonts/dm-sans-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	local("DM Sans"),
+	url('/static/fonts/dm-sans-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* dm-sans-700italic - latin */
@@ -84,8 +84,8 @@
 	font-style: italic;
 	font-weight: 700;
 	src: 
-		local("DM Sans"),
-		url('/static/fonts/dm-sans-v14-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	local("DM Sans"),
+	url('/static/fonts/dm-sans-v14-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* dm-sans-800 - latin */
@@ -95,8 +95,8 @@
 	font-style: normal;
 	font-weight: 800;
 	src: 
-		local("DM Sans"),
-		url('/static/fonts/dm-sans-v14-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	local("DM Sans"),
+	url('/static/fonts/dm-sans-v14-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* dm-sans-800italic - latin */
@@ -106,8 +106,8 @@
 	font-style: italic;
 	font-weight: 800;
 	src: 
-		local("DM Sans"),
-		url('/static/fonts/dm-sans-v14-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	local("DM Sans"),
+	url('/static/fonts/dm-sans-v14-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* dm-sans-900 - latin */
@@ -117,8 +117,8 @@
 	font-style: normal;
 	font-weight: 900;
 	src: 
-		local("DM Sans"),
-		url('/static/fonts/dm-sans-v14-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	local("DM Sans"),
+	url('/static/fonts/dm-sans-v14-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* dm-sans-900italic - latin */
@@ -128,22 +128,8 @@
 	font-style: italic;
 	font-weight: 900;
 	src: 
-		local("DM Sans"),
-		url('/static/fonts/dm-sans-v14-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* mobile styling */
-
-@media screen and (max-width: 800px) {
-	.lg-container, .header, footer {
-		width: 95% !important;
-	}
-	.h-cont a, .h-cont:hover a {
-		visibility: visible;
-		transition: .2s;
-		text-decoration-thickness: 1px;
-		font-size: 24px;
-	}
+	local("DM Sans"),
+	url('/static/fonts/dm-sans-v14-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 * {
@@ -168,7 +154,7 @@ a, a:visited {
 	text-decoration-color: #e4e4e430;
 	text-underline-offset: 3px;
 }
-a, a:hover {
+a, a:hover, .h-cont a, .h-cont a:hover {
 	transition: .2s;
 }
 a:hover {
@@ -198,18 +184,20 @@ offtop {
 	display: flex;
 	align-items: center;
 }
-.lg-container, .header a, .header {
+.lg-container, .header a, .header, footer, .header img {
 	border-radius: 5px;
 }
 .lg-container, footer {
 	padding: 20px;
+}
+.content {
+	width: 100%;
 }
 .header {
 	padding: 10px;
 }
 .header img {
 	margin-right: 5px;
-	border-radius: 5px;
 }
 .header a {
 	padding: 7px;
@@ -222,10 +210,13 @@ offtop {
 	background: #333;
 }
 .header a:active {
-	background: #444;
+	background: #393939;
 }
 .no-decor {
 	text-decoration: none !important;
+}
+.tcenter {
+	text-align: center;
 }
 footer a, footer a:hover {
 	text-decoration: none;
@@ -247,6 +238,26 @@ footer a:hover {
 	margin: auto;
 }
 .none {
-    display: none;
+	display: none;
 }
+
+body#home a#home-link,
+body#feedback a#feedback-link {
+	background: #333;
+}
+
+/* mobile styling */
+
+@media screen and (max-width: 800px) {
+	.lg-container, .header, footer {
+		width: 95% !important;
+	}
+	.h-cont a {
+		font-size: 24px;
+	}
+	.h-cont a, .h-cont:hover a {
+		visibility: visible;
+		transition: .2s;
+		text-decoration-thickness: 1px;
+	}
 }
