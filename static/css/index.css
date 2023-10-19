@@ -132,6 +132,20 @@
 		url('/static/fonts/dm-sans-v14-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* mobile styling */
+
+@media screen and (max-width: 800px) {
+	.lg-container, .header, footer {
+		width: 95% !important;
+	}
+	.h-cont a, .h-cont:hover a {
+		visibility: visible;
+		transition: .2s;
+		text-decoration-thickness: 1px;
+		font-size: 24px;
+	}
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -235,18 +249,4 @@ footer a:hover {
 .none {
     display: none;
 }
-}
-
-/* mobile styling */
-
-@media screen and (max-width: 800px) {
-	.lg-container, .header, footer {
-		width: 95%;
-	}
-	.h-cont a, .h-cont:hover a {
-		visibility: visible;
-		transition: .2s;
-		text-decoration-thickness: 1px;
-		font-size: 24px;
-	}
 }
