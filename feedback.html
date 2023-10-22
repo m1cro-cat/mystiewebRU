@@ -3,18 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="/static/css/index.css" rel="stylesheet">
+	<link href="/static/styles/index.css" rel="stylesheet">
 	<title>Website Feedback</title>
 </head>
 <body id="feedback">
 	<nav class="header" style="margin: 10px auto 20px auto;">
-		<img src="/static/images/mst-avatar.jpg" width="36" alt="MystieHum avatar">
-		<div class="nav-links">
-			<a href="/" id="home-link">Home</a>
-			<!--a href="/#about-me">About me</a>
-			<a href="/#projects">Projects</a>
-			<a href="/#contact">Contact me</a-->
-			<a href="/feedback.html" id="feedback-link">Feedback</a>
+		<div class="main-content" style="display: flex; align-items: center;">
+			<a href="/" data-logo><img src="/static/images/mst-avatar.webp" width="36" alt="MystieHum avatar"></a>
+			<div class="nav-links">
+				<a href="/assets.html" id="assets-link">Assets</a>
+				<a href="/feedback.html" id="feedback-link">Feedback</a>
+				<a href="https://mystie.bearblog.dev" title="https://mystie.bearblog.dev">Blog</a>
+			</div>
+		</div>
+		<div class="theme-switcher">
+			<button id="theme-toggle">Theme</button>
 		</div>
 	</nav>
 	<h2 class="tcenter">Here you can send feedback about this website!</h2>
@@ -32,15 +35,17 @@
 			        data-reactions-enabled="1"
 			        data-emit-metadata="0"
 			        data-input-position="top"
-			        data-theme="noborder_dark"
+			        data-theme="preferred_color_scheme"
 			        data-lang="en"
+			        loading="lazy"
 			        crossorigin="anonymous"
 			        async>
 			</script>
 		</div>
 	</div>
-		<footer style="margin: 10px auto;">
+	<footer style="margin: 10px auto;">
 		<p>Made by <a href="https://wetdry.world/@mystie">MystieHum</a> in 2023, open-source on <a href="https://github.com/MystieHum/web">GitHub</a>, hosted on <a href="https://heliohost.org">HelioHost</a>. Fonts used: <a href="https://fonts.google.com/specimen/DM+Sans">DM Sans</a>, sans-serif</p>
 	</footer>
+	<script src="/static/scripts/theme.min.js"></script>
 </body>
 </html>

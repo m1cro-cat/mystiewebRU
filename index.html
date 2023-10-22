@@ -3,19 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="/static/css/index.css" rel="stylesheet">
+	<link href="/static/styles/index.css" rel="stylesheet">
 	<title>MystieHum · IN DEVELOPMENT</title>
 </head>
 <body id="home">
     <div style="display: none;"><a rel="me" class="none" href="https://wetdry.world/@mystie">Mastodon</a></div>
 	<nav class="header" style="margin: 10px auto 20px auto;">
-		<img src="/static/images/mst-avatar.jpg" width="36" alt="MystieHum avatar">
-		<div class="nav-links">
-			<a href="/" id="home-link">Home</a>
-			<!--a href="/#about-me">About me</a>
-			<a href="/#projects">Projects</a>
-			<a href="/#contact">Contact me</a-->
-			<a href="/feedback.html" id="feedback-link">Feedback</a>
+		<div class="main-content" style="display: flex; align-items: center;">
+			<a href="/" data-logo><img loading="lazy" src="/static/images/mst-avatar.webp" width="36" alt="MystieHum avatar"></a>
+			<div class="nav-links">
+				<a href="/assets.html" id="assets-link">Assets</a>
+				<a href="/feedback.html" id="feedback-link">Feedback</a>
+				<a href="https://mystie.bearblog.dev" title="https://mystie.bearblog.dev">Blog</a>
+			</div>
+		</div>
+		<div class="theme-switcher">
+			<button id="theme-toggle">Theme</button>
 		</div>
 	</nav>
 	<div class="lg-container" style="margin: 10px auto;">
@@ -24,12 +27,10 @@
 				<h2 id="about-me">Hello there!</h2>
 				<a href="#about-me">#</a>
 			</div>
-			<p>My name is Ivan, I am a 14-year-old developer originally from <a href='https://en.wikipedia.org/wiki/Syktyvkar' target='_blank'>Syktyvkar</a>, 
-				I mainly develop websites. 
-				I like listening to music, coding (obviously), flashing devices.<br>
-				Favorite track: <a href='https://music.youtube.com/watch?v=fc1tg9qkGyI' target='_blank'>Hinkik - Explorers</a><br>
+			<p>I'm MystieHum, a 14-year-old developer that likes Glitch Hop music, developing websites, flashing devices.<br>
+				Favorite track: <a href='https://music.youtube.com/watch?v=fc1tg9qkGyI' target='_blank'>Hinkik - Explorers</a> <offtop>(glitch hop my beloved)</offtop><br>
 				Playlist on YouTube Music: <a href='https://music.youtube.com/playlist?list=PLglFzT7e0p-SCFG3JNdctW-7_Z8k23qrh' target='_blank'>MusicdasH</a><br>
-				Main device: <a href='https://4pda.to/devdb/xiaomi_redmi_6a' target='_blank'>Xiaomi Redmi 6A</a>
+				Main device: <a href='https://www.gsmarena.com/xiaomi_redmi_6a-9217.php' target='_blank'>Xiaomi Redmi 6A</a>
 			</p>
 		</div>
 	</div>
@@ -54,38 +55,55 @@
 			</div>
 			<ul class="icon-links">
 				<li>
-					<img src="/static/images/masto.svg" width="16" title="Mastodon" alt="Mastodon logo">
+					<img loading="lazy" src="/static/images/masto.svg" width="16" title="Mastodon" alt="Mastodon logo">
 					<a href="https://wetdry.world/@mystie" target="_blank">@mystie@wetdry.world</a>
 				</li>
 				<li>
-					<img src="/static/images/dc.svg" width="16" title="Discord" alt="Discord logo">
+					<img loading="lazy" src="/static/images/dc.svg" width="16" title="Discord" alt="Discord logo">
 					<a href="https://discord.com/users/658287767490527243" target="_blank">mystiedev</a>
 				</li>
 				<li>
-					<img src="/static/images/gh.svg" width="16" title="GitHub" alt="GitHub logo">
+					<img loading="lazy" src="/static/images/gh.svg" width="16" title="GitHub" alt="GitHub logo">
 					<a href="https://github.com/MystieHum">MystieHum</a>
 				</li>
 				<li>
-					<img src="/static/images/tg.svg" width="16" title="Telegram" alt="Telegram logo">
+					<img loading="lazy" src="/static/images/tg.svg" width="16" title="Telegram" alt="Telegram logo">
 					<a href="https://telegram.dog/MystieHum">MystieHum</a>
 				</li>
 				<li>
-					<img src="/static/images/yt.png" width="16" title="YouTube" alt="YouTube logo">
+					<img loading="lazy" src="/static/images/yt.png" width="16" title="YouTube" alt="YouTube logo">
 					<a href="https://www.youtube.com/@MystieHum">MystieHum</a>
 				</li>
 				<li>
-					<img src="/static/images/email.png" width="16" title="Email" alt="Mail icon">
+					<img loading="lazy" src="/static/images/email.png" width="16" title="Email" alt="Mail icon">
 					<a href="mailto:mystie@skiff.com">mystie@skiff.com</a>
 				</li>
 				<li>
-					<img src="/static/images/email.png" width="16" title="Email" alt="Mail icon">
+					<img loading="lazy" src="/static/images/email.png" width="16" title="Email" alt="Mail icon">
 					<a href="mailto:oivan2401@gmail.com">oivan2401@gmail.com</a>
 				</li>
 			</ul>
 		</div>
 	</div>
+	<div class="lg-container" style="margin: 10px auto;">
+		<div class="content">
+			<div class="h-cont">
+				<h2 id="badges">Badges:</h2>
+				<a href="#badges">#</a>
+			</div>
+			<a href="https://nano.lgbt" target="_blank"><img loading="lazy" src="/static/images/nano-88x31.png" alt="nano pony badge with text: 'nano'"></a>
+			<a href="https://firefox.com" target="_blank"><img loading="lazy" src="/static/images/firefox.png" alt="firefox badge with text: 'Take back the web'"></a>
+			<img loading="lazy" src="/static/images/invalid.png" alt="w3c badge with poorly written 'bad html markup' text and a red cross">
+			<img loading="lazy" src="/static/images/keep.gif" alt="say no to web3, keep the web free">
+			<img loading="lazy" src="/static/images/css.png" alt="infamous 'css is awesome' meme">
+			<img loading="lazy" src="/static/images/stopms.gif" alt="stop microsoft badge">
+			<img loading="lazy" src="/static/images/linuxnow.png" alt="linux now badge">
+			<img loading="lazy" src="/static/images/piracy.gif" alt="piracy now badge">
+		</div>
+	</div>
 	<footer style="margin: 10px auto;">
 		<p>Made by <a href="https://wetdry.world/@mystie">MystieHum</a> in 2023, open-source on <a href="https://github.com/MystieHum/web">GitHub</a>, hosted on <a href="https://heliohost.org">HelioHost</a>. Fonts used: <a href="https://fonts.google.com/specimen/DM+Sans">DM Sans</a>, sans-serif</p>
 	</footer>
+	<script src="/static/scripts/theme.min.js"></script>
 </body>
 </html>
