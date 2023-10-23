@@ -160,10 +160,8 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	background: var(--mst-bg);
-}
-body, button {
 	font-family: sans-serif;
+	background: var(--mst-bg);
 	color: var(--mst-color);
 }
 button {
@@ -171,6 +169,7 @@ button {
 	background: transparent;
 	cursor: pointer;
 	font-size: 16px;
+	color: var(--mst-a-color);
 }
 button:hover {
 	background: var(--mst-header-hover-link-bg);
@@ -215,7 +214,7 @@ offtop {
 	background: var(--mst-container-bg);
 	align-items: center;
 }
-.lg-container, .header, footer, .h-cont,
+.lg-container, .header, .h-cont,
 .icon-links li, .asset, .asset-desc, .asset-preview,
 .header.main-content {
 	display: flex;
@@ -252,6 +251,7 @@ offtop {
 }
 .header a[data-logo] {
 	padding: 0;
+	margin: 0;
 	display: flex;
 }
 .header a[data-logo]:hover, .header a[data-logo]:active {
@@ -307,6 +307,12 @@ footer a:hover {
 }
 :root.light img[src="/static/images/mystiehum_full.svg"] {
 	background: #777;
+}
+:root.light .dark-only {
+	display: none;
+}
+:root.dark .light-only {
+	display: none;
 }
 .icon-links li img {
 	margin-right: 3px;

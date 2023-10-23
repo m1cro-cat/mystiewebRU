@@ -27,12 +27,6 @@ if (themeToggle) {
 	themeToggle.addEventListener('click', toggleTheme);
 }
 
-window.addEventListener('message', (event) => {
-	if (event.origin === 'https://giscus.app' && event.data.giscus && themeToggle) {
-		changeGiscusTheme();
-	}
-});
-
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
 	root.setAttribute('class', savedTheme);
