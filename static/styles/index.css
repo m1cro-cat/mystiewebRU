@@ -311,8 +311,11 @@ footer a:hover {
 :root.light .dark-only {
 	display: none;
 }
-:root.dark .light-only {
+:root .light-only {
 	display: none;
+}
+:root.light .light-only {
+	display: inline-block;
 }
 .icon-links li img {
 	margin-right: 3px;
