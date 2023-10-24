@@ -22,6 +22,16 @@
 			<button id="theme-toggle"><i class="ri-palette-line"></i> Theme</button>
 		</div>
 	</nav>
+	<div class="lg-container" id="warning" style="margin: 10px auto;">
+		<div class="content">
+			<div class="h-cont">
+				<h2 id="warn-h2">Warning!</h2>
+				<a href="#warn-h2">#</a>
+			</div>
+			<p>Google & Chromium are adding DRM to the open web. <a target="_blank" href="https://www.mozilla.org/en-US/firefox/new/">Switch to Firefox now</a></p>
+			<p><offtop>The only other mainstream browser that isn't based on Chromium :D</offtop></p>
+		</div>
+	</div>
 	<div class="lg-container" style="margin: 10px auto;">
 		<div class="content">
 			<div class="h-cont">
@@ -107,5 +117,11 @@
 		<p>You are currently on the <b class="dark-only">dark</b><b class="light-only">light</b> side <a href="javascript:toggleTheme()">(switch?)</p>
 	</footer>
 	<script src="/static/scripts/theme.min.js"></script>
+	<script>
+	    const isChromium = !!navigator.userAgentData && navigator.userAgentData.brands.some(data => data.brand == 'Chromium');
+	    if (isChromium) {
+	    	document.getElementById("warning").style.display = "flex";
+	    }
+	</script>
 </body>
 </html>

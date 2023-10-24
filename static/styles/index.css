@@ -134,6 +134,8 @@
 
 :root {
 	--mst-bg: #1a1a1a;
+	--mst-btn-bg: /* TODO: throw a bg color there */;
+	--mst-warn-bg: #482500;
 	--mst-container-bg: #252525;
 	--mst-color: #fff;
 	--mst-a-color: #e4e4e4;
@@ -143,6 +145,8 @@
 }
 :root.light {
 	--mst-bg: #eaeaea;
+	--mst-btn-bg: /* TODO: throw a bg color there */;
+	--mst-warn-bg: #ffc283;
 	--mst-container-bg: #f2f2f2;
 	--mst-color: #222;
 	--mst-a-color: #000;
@@ -164,17 +168,20 @@ body {
 	background: var(--mst-bg);
 	color: var(--mst-color);
 }
-button {
+button, .button {
 	border: none;
-	background: transparent;
+	background: var(--mst-btn-bg);
 	cursor: pointer;
 	font-size: 16px;
 	color: var(--mst-a-color);
 }
-button:hover {
+.button {
+	text-decoration: none;
+}
+button:hover, .button:hover {
 	background: var(--mst-header-hover-link-bg);
 }
-button:active {
+button:active, .button:active {
 	background: var(--mst-header-active-link-bg);
 }
 h1, h2, h3, h4, h5, h6 {
@@ -186,7 +193,8 @@ a, a:visited {
 	text-decoration-color: var(--mst-a-decor-color);
 	text-underline-offset: 3px;
 }
-a, a:hover, .h-cont a, .h-cont a:hover, button:hover, button {
+a, a:hover, .h-cont a, .h-cont a:hover, button:hover, button,
+.button, .button:hover {
 	transition: .2s;
 }
 a:hover {
@@ -194,6 +202,10 @@ a:hover {
 }
 offtop {
 	opacity: 0.5;
+}
+#warning {
+	display: none;
+	background: var(--mst-warn-bg);
 }
 .h-cont {
 	align-items: center;
@@ -220,7 +232,7 @@ offtop {
 	display: flex;
 }
 .lg-container, .header a, .header, footer,
-.header img, .asset img, button {
+.header img, .asset img, button, .button {
 	border-radius: 5px;
 }
 .lg-container, footer {
@@ -240,7 +252,7 @@ offtop {
 .header img {
 	margin-right: 5px;
 }
-.header a, button {
+.header a, button, .button {
 	padding: 7px;
 }
 .header a {
