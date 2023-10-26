@@ -118,7 +118,7 @@
 	</footer>
 	<script src="/static/scripts/theme.min.js"></script>
 	<script>
-	    const isChromium = !!navigator.userAgentData && navigator.userAgentData.brands.some(data => data.brand == 'Chromium');
+	    const isChromium = !!navigator.userAgent && navigator.userAgent.includes("Chrom");
 	    if (isChromium) {
 	    	document.getElementById("warning").style.display = "flex";
 	    }
