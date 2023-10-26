@@ -136,6 +136,8 @@
 	--mst-bg: #1a1a1a;
 	--mst-btn-bg: /* TODO: throw a bg color there */;
 	--mst-warn-bg: #482500;
+	--mst-warn-btn-bg-hover: #552c00;
+	--mst-warn-btn-bg-active: #603200;
 	--mst-container-bg: #252525;
 	--mst-color: #fff;
 	--mst-a-color: #e4e4e4;
@@ -146,13 +148,15 @@
 :root.light {
 	--mst-bg: #eaeaea;
 	--mst-btn-bg: /* TODO: throw a bg color there */;
-	--mst-warn-bg: #ffc283;
+	--mst-warn-bg: #ffd9b3;
+	--mst-warn-btn-bg-hover: #ffcd9b;
+	--mst-warn-btn-bg-active: #f2be8a;
 	--mst-container-bg: #f2f2f2;
 	--mst-color: #222;
 	--mst-a-color: #000;
 	--mst-a-decor-color: #00000030;
 	--mst-header-hover-link-bg: #ddd;
-	--mst-header-active-link-bg: #ccc;
+	--mst-header-active-link-bg: #d2d2d2;
 }
 
 * {
@@ -177,6 +181,12 @@ button, .button {
 }
 .button {
 	text-decoration: none;
+}
+.warn-btn:hover {
+	background: var(--mst-warn-btn-bg-hover) !important;
+}
+.warn-btn:active {
+	background: var(--mst-warn-btn-bg-active) !important;
 }
 button:hover, .button:hover {
 	background: var(--mst-header-hover-link-bg);
@@ -212,7 +222,7 @@ offtop {
 	width: fit-content;
 }
 .h-cont a {
-	font-size: 28px;
+	font-size: 24px;
 	margin-left: 5px;
 	visibility: hidden;
 	transition: visibility 0s linear 0.3s;
@@ -233,7 +243,7 @@ offtop {
 }
 .lg-container, .header a, .header, footer,
 .header img, .asset img, button, .button {
-	border-radius: 5px;
+	border-radius: 3px;
 }
 .lg-container, footer {
 	padding: 20px;
@@ -295,27 +305,8 @@ footer a:hover {
 .icon-links li, .asset-preview, .header.main-content {
 	align-items: center;
 }
-:root.light .icon-links > li:nth-child(3)::before {
-	content: url('/static/images/gh-dark-16x16.svg');
-}
-:root.light .icon-links > li:nth-child(3)::before,
-:root.light .icon-links > li:nth-child(6)::before,
-:root.light .icon-links > li:nth-child(7)::before {
-	display: flex;
-}
-:root.light .icon-links > li:nth-child(3) img,
-:root.light .icon-links > li:nth-child(6) img,
-:root.light .icon-links > li:nth-child(7) img {
-	display: none;
-}
-:root.light .icon-links > li:nth-child(3) a,
-:root.light .icon-links > li:nth-child(6) a,
-:root.light .icon-links > li:nth-child(7) a {
-	margin-left: 3px;
-}
-:root.light .icon-links > li:nth-child(6)::before,
-:root.light .icon-links > li:nth-child(7)::before {
-	content: url('/static/images/email-dark-16x16.png');
+:root.light .light-invert {
+	filter: invert(100%);
 }
 :root.light img[src="/static/images/mystiehum_full.svg"] {
 	background: #777;
@@ -368,17 +359,17 @@ footer a:hover {
 	.mobile {
 		display: block;
 	}
-	.asset {
+	.asset, #warning {
 		flex-direction: column;
+	}
+	#warning > div:nth-child(2) {
+		margin-top: 10px;
 	}
 	.asset-preview, .asset {
 		align-items: normal;
 	}
 	.asset-preview {
 		max-width: fit-content;
-	}
-	.h-cont a {
-		font-size: 24px;
 	}
 	.h-cont a, .h-cont:hover a {
 		visibility: visible;
