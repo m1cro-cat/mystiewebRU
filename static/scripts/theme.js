@@ -8,9 +8,8 @@ function toggleTheme() {
 	changeGiscusTheme();
 }
 
-const savedTheme = localStorage.getItem('theme');
-
 function changeGiscusTheme() {
+	const theme = localStorage.getItem('theme');
 	function sendMessage(message) {
 		const iframe = document.querySelector('iframe.giscus-frame');
 		if (!iframe) return;
@@ -28,6 +27,7 @@ if (themeToggle) {
 	themeToggle.addEventListener('click', toggleTheme);
 }
 
+const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
 	root.setAttribute('class', savedTheme);
 	changeGiscusTheme();
