@@ -302,11 +302,18 @@ footer a {
 footer a:hover {
 	opacity: 0.8;
 }
+label {
+	user-select: none;
+}
+input[type="checkbox"] {
+	width: 16px;
+	height: 16px;
+}
 .icon-links li, .asset-preview, .header.main-content {
 	align-items: center;
 }
 :root.light .light-invert {
-	filter: invert(100%);
+	filter: invert();
 }
 :root.light img[src="/static/images/mystiehum_full.svg"] {
 	background: #777;
