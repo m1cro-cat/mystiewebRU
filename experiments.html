@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/static/styles/index.min.css" rel="stylesheet">
+	<link href="/static/styles/remixicon/fonts/remixicon.min.css" rel="stylesheet">
+	<title>Experiments</title>
+</head>
+<body>
+	<style>
+		#width-toggle:checked ~ .lg-container, #width-toggle:checked ~ nav,
+		#width-toggle:checked ~ footer {
+			width: 100%;
+		}
+	</style>
+	<nav class="header" style="margin: 10px auto 20px auto;">
+		<div class="main-content" style="display: flex; align-items: center;">
+			<a href="/" data-logo><img src="/static/images/mst-avatar.webp" width="36" alt="MystieHum avatar"></a>
+			<div class="nav-links" style="display: flex;">
+				<a href="/assets.html" id="assets-link">Assets</a>
+				<a href="/feedback.html" id="feedback-link">Feedback</a>
+				<a href="https://mystie.bearblog.dev" title="https://mystie.bearblog.dev">Blog<i class="ri-arrow-right-up-line"></i></a>
+			</div>
+		</div>
+		<div class="theme-switcher">
+			<button id="theme-toggle"><i class="ri-palette-line"></i> Theme</button>
+		</div>
+	</nav>
+	<div class="lg-container" style="margin: 10px auto;">
+		<div class="content">
+			<h2>List of experiments:</h2>
+			<h3>Customizing layout</h3>
+			<h4>Description</h4>
+			<p>This is a thing that lets you customize website layout with checkboxes. Try it out!</p>
+			<details>
+				<summary><b>Try it</b></summary>
+				<!-- checkboxes start -->
+				<input type="checkbox" data-container="lgContainer" id="1" class="width-toggle">
+				<label for="1">Toggle full width for <code>.lg-container</code></label>
+				<br>
+				<input type="checkbox" data-container="header" id="2" class="width-toggle">
+				<label for="2">Toggle full width for <code>.header</code></label>
+				<br>
+				<input type="checkbox" data-container="footer" id="3" class="width-toggle">
+				<label for="3">Toggle full width for <code>footer</code></label>
+				<!-- checkboxes end -->
+			</details>
+			<h4>Bugs</h4>
+			<ul>
+				<li style="margin-left: 15px;">Checkboxes sometimes get checked after reloading the page</li>
+			</ul>
+			<h3>Custom CSS</h3>
+			<h4>Description</h4>
+			<p>This lets you apply custom CSS using customized <code>&lt;style&gt;</code> element.<br>Note: CSS applies immediately</p>
+			<details>
+				<summary><b>Try it</b></summary>
+				<!--textarea id="cssTextarea" rows="10"></textarea><br-->
+				<style contenteditable>you can type css here</style>
+			</details>
+			<h4>Bugs</h4>
+			<ul>
+				<li style="margin-left: 15px;">None?</li>
+			</ul>
+		</div>
+	</div>
+	<footer style="margin: 10px auto;">
+		<p>Made by <a href="https://wetdry.world/@mystie">MystieHum</a> in 2023, open-source on <a href="https://github.com/MystieHum/web">GitHub</a>, hosted on <a href="https://heliohost.org">HelioHost</a>. Fonts used: <a href="https://fonts.google.com/specimen/DM+Sans">DM Sans</a>, sans-serif</p>
+		<p>You are currently on the <b class="dark-only">dark</b><b class="light-only">light</b> side <a href="javascript:toggleTheme()">(switch?)</p>
+	</footer>
+	<script src="/static/scripts/theme.min.js"></script>
+	<script>
+		// Get the checkboxes and containers
+		const checkboxes = document.querySelectorAll('.width-toggle');
+		const containers = {
+			lgContainer: document.querySelector('.lg-container'),
+			header: document.querySelector('.header'),
+			footer: document.querySelector('footer')
+		};
+
+		// Update the widths based on stored values
+		for (const containerName in containers) {
+			const storedWidth = localStorage.getItem(`${containerName}-width`);
+			const container = containers[containerName];
+			if (storedWidth) {
+				container.style.width = storedWidth;
+				checkboxes.forEach((checkbox) => {
+					if (checkbox.getAttribute('data-container') === containerName) {
+			        	checkbox.checked = true; // Check the checkbox if storedWidth exists for the container
+			    	}
+				});
+			}
+		}
+
+		// Add change event listeners to checkboxes
+		checkboxes.forEach((checkbox) => {
+			checkbox.addEventListener('change', function() {
+				const containerName = this.getAttribute('data-container');
+				const container = containers[containerName];
+				if (this.checked) {
+					container.style.width = '100%';
+					localStorage.setItem(`${containerName}-width`, '100%');
+				} else {
+					container.style.width = '70%';
+					localStorage.setItem(`${containerName}-width`, '70%');
+				}
+			});
+		});
+
+	</script>
+</body>
+</html>

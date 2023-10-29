@@ -43,5 +43,7 @@
 .ri-10x { font-size: 10em; }
 .ri-fw { text-align: center; width: 1.25em; }
 
-.ri-palette-fill:before { content: "\efc4"; }
 .ri-palette-line:before { content: "\efc5"; }
+.ri-arrow-right-up-line:before { content: "\ea70"; }
+.ri-arrow-right-line:before { content: "\ea6c"; }
+.ri-arrow-left-line:before { content: "\ea60"; }
