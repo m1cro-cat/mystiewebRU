@@ -161,6 +161,9 @@
 	--mst-input-bg: #ddd;
 	--mst-input-border-color: #bbb;
 }
+::selection {
+	background: rgba(56,139,253,0.2);
+}
 
 * {
 	margin: 0;
