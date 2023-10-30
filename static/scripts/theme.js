@@ -10,6 +10,10 @@ function toggleTheme() {
 
 function changeGiscusTheme() {
 	const theme = localStorage.getItem('theme');
+	let giscusTheme = 'noborder_gray';
+	if (theme) {
+		giscusTheme = theme === 'dark' ? 'noborder_gray' : 'light';
+	}
 	function sendMessage(message) {
 		const iframe = document.querySelector('iframe.giscus-frame');
 		if (!iframe) return;
@@ -17,7 +21,7 @@ function changeGiscusTheme() {
 	}
 	sendMessage({
 		setConfig: {
-			theme: theme,
+			theme: giscusTheme,
 		},
 	});
 }
