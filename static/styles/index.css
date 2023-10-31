@@ -241,10 +241,10 @@ a:hover {
 offtop {
 	opacity: 0.5;
 }
-#warning {
+/*#warning {
 	display: none;
 	background: var(--mst-warn-bg);
-}
+}*/
 .h-cont {
 	align-items: center;
 	width: fit-content;
@@ -394,12 +394,12 @@ input[type="checkbox"] {
 	.mobile {
 		display: block;
 	}
-	.asset, #warning {
+	.asset/*, #warning*/ {
 		flex-direction: column;
 	}
-	#warning > div:nth-child(2) {
+	/*#warning > div:nth-child(2) {
 		margin-top: 10px;
-	}
+	}*/
 	.asset-preview, .asset {
 		align-items: normal;
 	}

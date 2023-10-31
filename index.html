@@ -22,7 +22,8 @@
 			<button id="theme-toggle"><i class="ri-palette-line"></i> Theme</button>
 		</div>
 	</nav>
-	<div class="lg-container" id="warning" style="margin: 10px auto; justify-content: space-between;">
+	<!-- actually, let's not do that -->
+	<!--div class="lg-container" id="warning" style="margin: 10px auto; justify-content: space-between;">
 		<div>
 			<h2 id="warn-h2">Google & Chromium are adding DRM to the open web.</h2>
 			<small>(Google's Web Environment Integrity)</small>
@@ -33,7 +34,7 @@
 				<p>&nbsp;Switch to Firefox now</p>
 			</a>
 		</div>
-	</div>
+	</div-->
 	<div class="lg-container" style="margin: 10px auto;">
 		<div class="content">
 			<div class="h-cont">
@@ -114,8 +115,9 @@
 			<img loading="lazy" width="88" height="31" src="/static/images/stopms.gif" alt="stop microsoft button">
 			<img loading="lazy" width="88" height="31" src="/static/images/linuxnow.png" alt="linux now button">
 			<img loading="lazy" width="88" height="31" src="/static/images/piracy.gif" alt="piracy now button">
-			<img loading="lazy" width="88" height="31" src="/static/images/centos.png" alt="powered by centos">
+			<a href="https://www.centos.org/" target="_blank"><img loading="lazy" width="88" height="31" src="/static/images/centos.png" alt="powered by centos"></a>
 			<img loading="lazy" width="88" height="31" src="/static/images/gnu-linux.gif" alt="made on gnu/linux">
+			<a href="https://ublockorigin.com" target="_blank"><img loading="lazy" width="88" height="31" src="/static/images/ublock.png" alt="ublock origin now"></a>
 			<!-- "friends" -->
 			<a href="https://rodionmern.github.io/myweb" target="_blank"><img loading="lazy" width="88" height="31" src="/static/images/rosburff-rodsa.png" alt="rosburff button"></a>
 			<a href="https://devcat86.eu.org" target="_blank"><img loading="lazy" width="88" height="31" src="/static/images/m1crocat.png"></a>
@@ -139,11 +141,11 @@
 		<p>You are currently on the <b class="dark-only">dark</b><b class="light-only">light</b> side <a href="javascript:toggleTheme()">(switch?)</p>
 	</footer>
 	<script src="/static/scripts/theme.min.js"></script>
-	<script>
-	    const isChromium = !!navigator.userAgent && navigator.userAgent.includes("Chrom");
-	    if (isChromium) {
+	<!-- actually, let's not do that -->
+	<!--script>
+	    if (navigator.userAgent.includes("Chrom")) {
 	    	document.getElementById("warning").style.display = "flex";
 	    }
-	</script>
+	</script-->
 </body>
 </html>
