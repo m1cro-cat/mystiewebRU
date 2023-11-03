@@ -6,4 +6,4 @@ all contributions will be accepted, however, there are two rules:
 2. you must be able explain the change(s), if asked to do so
 ## cool fact
 this is the third version of the website!  
-the second one is available at https://realvanyek.eu.org (source: [MystieHum/mystie.eu.org](https://github.com/MystieHum/mystie.eu.org)) & the first one is currently not available to the public, but i do have a backup of it (it was a wordpress blog)
+the second one is available at https://realvanyek.eu.org (source: [mystie/mystie.eu.org](https://codeberg.org/mystie/mystie.eu.org)) & the first one is currently not available to the public, but i do have a backup of it (it was a wordpress blog)
