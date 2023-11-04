@@ -3,25 +3,25 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="/static/styles/index.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="/static/styles/remixicon/fonts/remixicon.min.css">
-	<title>Website Feedback</title>
+	<link href="./static/styles/index.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./static/styles/remixicon/fonts/remixicon.min.css">
+	<title>Страница обратной связи</title>
 </head>
 <body id="feedback">
 	<nav class="header" style="margin: 10px auto 20px auto;">
 		<div class="main-content" style="display: flex; align-items: center;">
-			<a href="/" data-logo><img src="/static/images/mst-avatar.webp" width="36" alt="MystieHum avatar"></a>
+			<a href="/" data-logo><img src="./static/images/mst-avatar.webp" width="36" alt="MystieHum avatar"></a>
 			<div class="nav-links" style="display: flex;">
-				<a href="/assets.html" id="assets-link">Assets</a>
-				<a href="/feedback.html" id="feedback-link">Feedback</a>
-				<a href="https://mystie.bearblog.dev" title="https://mystie.bearblog.dev">Blog<i class="ri-arrow-right-up-line"></i></a>
+				<a href="./assets.html" id="assets-link">Assets</a>
+				<a href="./feedback.html" id="feedback-link">Обратная связь</a>
+				<a href="https://mystie.bearblog.dev" title="https://mystie.bearblog.dev">Блог<i class="ri-arrow-right-up-line"></i></a>
 			</div>
 		</div>
 		<div class="theme-switcher">
-			<button id="theme-toggle"><i class="ri-palette-line"></i> Theme</button>
+			<button id="theme-toggle"><i class="ri-palette-line"></i> Тема</button>
 		</div>
 	</nav>
-	<h2 class="tcenter">Here you can send feedback about this website!</h2>
+	<h2 class="tcenter">Здесь вы можете оставить отзыв об этом веб-сайте!</h2>
 	<br>
 	<div class="lg-container centered">
 		<div class="content">
@@ -37,7 +37,7 @@
 			        data-emit-metadata="0"
 			        data-input-position="top"
 			        data-theme="noborder_gray"
-			        data-lang="en"
+			        data-lang="ru"
 			        loading="lazy"
 			        crossorigin="anonymous"
 			        async>
@@ -45,10 +45,10 @@
 		</div>
 	</div>
 	<footer style="margin: 10px auto;">
-		<p>Made by <a href="https://wetdry.world/@mystie">MystieHum</a> in 2023, open-source on <a href="https://github.com/MystieHum/web">GitHub</a>, hosted on <a href="https://heliohost.org">HelioHost</a>. Fonts used: <a href="https://fonts.google.com/specimen/DM+Sans">DM Sans</a>, sans-serif</p>
-		<p>You are currently on the <b class="dark-only">dark</b><b class="light-only">light</b> side <a href="javascript:toggleTheme()">(switch?)</p>
+		<p>Создано <a href="https://wetdry.world/@mystie">MystieHum</a> в 2023, переведено на русский <a href="https://devcat86.eu.org">m1cro_cat</a>, исходный код на <a href="https://github.com/MystieHum/web">GitHub</a>, сайт хостится на <a href="https://heliohost.org">HelioHost</a>. Используемые шрифты: <a href="https://fonts.google.com/specimen/DM+Sans">DM Sans</a>, sans-serif</p>
+		<p>В настоящее время вы находитесь на <b class="dark-only">темной</b><b class="light-only">светлой</b> стороне <a href="javascript:toggleTheme()">(сменить?)</p>
 	</footer>
-	<script src="/static/scripts/theme.min.js"></script>
+	<script src="./static/scripts/theme.min.js"></script>
 	<script>
 		window.addEventListener('message', (event) => {
 			if (event.origin === 'https://giscus.app' && event.data.giscus && themeToggle) {
